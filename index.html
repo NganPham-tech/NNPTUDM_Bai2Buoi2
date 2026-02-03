@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Posts - Xoá mềm & Tự tăng ID</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .text-muted { color: #aaa; font-style: italic; }
+    </style>
+</head>
+<body>
+    <h2>Quản lý bài viết</h2>
+    <div>
+        <input type="text" id="txt_id" placeholder="ID (Để trống để tự tăng)">
+        <input type="text" id="txt_title" placeholder="Tiêu đề">
+        <input type="number" id="txt_views" placeholder="Lượt xem">
+        <button onclick="Save()">Lưu bài viết</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tiêu đề</th>
+                <th>Lượt xem</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="table_body"></tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
